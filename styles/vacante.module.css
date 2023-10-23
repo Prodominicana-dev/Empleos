@@ -1,0 +1,40 @@
+.desbordamiento {
+    height: auto;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.categoria{
+    background-color: #6982a8;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    color:#eef0f4
+}
+.habilitado{
+    background-color: #14a555;
+    border-radius: 10px;
+    margin: auto;
+    width: auto;
+    color:#eef0f4;
+    padding: 5px;
+    display: block;
+}
+
+.alerta{
+    background-color: #fff;
+
+}
+.alerta:hover {
+    background-color: #F1F3F4;
+    border-radius: 5px;
+}
+
+
+.space{
+    height: 200px;
+}
