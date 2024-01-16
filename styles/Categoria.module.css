@@ -1,0 +1,9 @@
+.alerta{
+    background-color: #fff;
+
+}
+.alerta:hover {
+    background-color: #F1F3F4;
+    border-radius: 5px;
+  
+}
