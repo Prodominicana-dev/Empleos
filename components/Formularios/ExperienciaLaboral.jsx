@@ -97,7 +97,7 @@ const WorkExperience = ({WorkExperience,setWorkExperiences,onFormChange,eliminar
                             <Form.Label className='control-label required'>Salario:</Form.Label>
                             <Form.Control 
                             required
-                            type="text"  
+                            type="number" 
                             name="salary" 
                             value={WorkExperience.salary || ''} 
                             onChange={(e) => onFormChange(e, 'salary',index)}  style={{ height: '40px' }}

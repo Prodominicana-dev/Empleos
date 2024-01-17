@@ -68,13 +68,10 @@ const Profile = ({Subscription, setSubscription, Col, id, setError,error}) => {
 
     //............................................
         const onInputChange = (e, name,) => {
-              
-                let val = (e.target && e.target.value) || '';
-                 if(val==''){
-                        val = e != null ? e : '';
-                 }
+                let value = ( e && typeof e === 'object') ? (e.target && e.target.value) || '': e || '';
+                 
                 let _Subscription = { ...Subscription };
-                _Subscription[`${name}`] =  val.toString();
+                _Subscription[`${name}`] =  value.toString();
                 setSubscription(_Subscription);
 
         };
@@ -106,6 +103,11 @@ const Profile = ({Subscription, setSubscription, Col, id, setError,error}) => {
                   Subscription.relationshipLandline="Vacío";
                   setSubscription(Subscription);
                 }
+                if (value === 'Si') {
+                        Subscription.relationshipName="";
+                        Subscription.relationshipLandline="";
+                        setSubscription(Subscription);
+                      }
               };
              
              // handleSeleccion(Subscription.ParentescoEmergente);
@@ -246,7 +248,7 @@ const Profile = ({Subscription, setSubscription, Col, id, setError,error}) => {
 
                 <Form.Group as={Col} className="mb-3 col-12 col-lg-4 form-control-lg" controlId="formFile">
                         <Form.Label className='control-label required'>Número de documento:</Form.Label>
-                        <Form.Control  required type="text"   name='documentNumber' value = {Subscription.documentNumber || ''}
+                        <Form.Control  required type="number"   name='documentNumber' value = {Subscription.documentNumber || ''}
                         onChange={(e)=>{onInputChange(e,"documentNumber")}} style={{ height: '40px' }}/>
                         <Form.Control.Feedback type="invalid">Este campo es requerido.</Form.Control.Feedback>
                 </Form.Group>
@@ -313,12 +315,12 @@ const Profile = ({Subscription, setSubscription, Col, id, setError,error}) => {
 
                         <Form.Group as={Col} className="mb-3 col-12 col-lg-4 form-control-lg" controlId="exampleForm.ControlTextarea1">
                                 <Form.Label >Teléfono:</Form.Label>
-                                <Form.Control  required type="text" name='relationshipLandline' value = {Subscription.relationshipLandline || ''}
-                                onChange={(e)=>{onInputChange(e,"relationshipLandline")}}
-                                
-                                style={{ height: '40px' }}
+
+                                <PhoneField
+                                        value={Subscription.relationshipLandline || ''}
+                                        onChange={(e) => onInputChange(e, 'relationshipLandline')}
                                 />
-                                <Form.Control.Feedback type="invalid">Este campo es requerido.</Form.Control.Feedback>
+                                
                         </Form.Group>
                 </div>)}
                 
@@ -338,7 +340,7 @@ const Profile = ({Subscription, setSubscription, Col, id, setError,error}) => {
                 <hr/>
                 <Form.Group as={Col} className="mb-3 col-12 col-lg-12 form-control-lg" controlId="exampleForm.ControlTextarea1">
                         <Form.Label className='control-label required'>¿Sueldo al que aspira?</Form.Label>
-                        <Form.Control  required type="text" name='salaryDesired' value = {Subscription.salaryDesired || ''}
+                        <Form.Control  required  type="number"  name='salaryDesired' value = {Subscription.salaryDesired || ''}
                         onChange={(e)=>{onInputChange(e,"salaryDesired")}} style={{ height: '40px' }}/>
                         <Form.Control.Feedback type="invalid">Este campo es requerido.</Form.Control.Feedback>
                 </Form.Group>
