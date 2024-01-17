@@ -36,19 +36,6 @@ const Nosotros = () => {
         <ul style={{ listStyle: 'none', padding: '0', margin: '0' }}>{dots}</ul>
       </div>
     ),
-    // customPaging: () => (
-    //   <div
-    //     style={{
-    //       width: '15px',
-    //       height: '15px',
-    //       borderRadius: '50%',
-    //       background: '#007BFF',
-    //       margin: '0 5px',
-    //     }}
-    //   />
-    // ),
-    // prevArrow: <></>,
-    // nextArrow: <></>,
   };
 
   return (
@@ -74,7 +61,7 @@ const Nosotros = () => {
         <div className="container-fluid">
           {/* Resto de tu código */}
           <div className="row">
-                <div className="d-none d-lg-block col-lg-6 p-0">
+                <div className="d-none d-lg-block col-lg-7 p-0">
                     <div className="testimonial-bg set-bg"  >
                     <img src="https://prodominicana.gob.do/wp/wp-content/themes/ceird/img/ceird.jpg"  />
                     </div>
