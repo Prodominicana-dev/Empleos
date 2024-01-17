@@ -5,7 +5,7 @@ module.exports = {
         name: 'Empleos',
         script: 'npm',
         args: 'start2',
-        cwd: '/var/www/Empleos', // Ruta del directorio del proyecto en el servidor
+        cwd: '/var/www/node/Empleos', // Ruta del directorio del proyecto en el servidor
         instances: 1, // Número de instancias que deseas ejecutar
         autorestart: true, // Hacer que la aplicación se reinicie automáticamente si falla
         watch: false, // Desactivar el monitoreo de cambios en los archivos para reiniciar automáticamente

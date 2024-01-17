@@ -21,9 +21,9 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
             # Comandos a ejecutar en el servidor remoto
-             cd /var/www/Empleos
+             cd /var/www/node/Empleos
              git reset --hard HEAD
              git pull
              npm install
              npm run build
-             pm2 startOrRestart ecosystem.config.js
+             pm2 start ecosystem.config.js
