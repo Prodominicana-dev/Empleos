@@ -77,14 +77,14 @@ const Nosotros = () => {
                                     <div className="ml-3">
                                     
                                         <h5 style={{fontSize:'38px',color:'#758EBD'}}>Misión</h5>
-                                        <p style={{fontSize:'28px',color:'#758EBD'}}> Crear valor y servir para optimizar la atracción de inversión y mejorar nuestra presencia exportadora en los mercados internacionales incentivando empleos de calidad.</p>
+                                        <p style={{fontSize:'26px',color:'#758EBD'}}> Crear valor y servir para optimizar la atracción de inversión y mejorar nuestra presencia exportadora en los mercados internacionales incentivando empleos de calidad.</p>
                                     
                                     </div>
 
                                     <div className="ml-3">
                                     
                                         <h5 style={{fontSize:'38px',color:'#758EBD'}}>Visión</h5>
-                                        <p style={{fontSize:'28px',color:'#758EBD'}}> Ser la agencia de promoción de exportación e inversión más eficiente de la región, para una República Dominicana más competitiva, productiva y desarrollada.</p>
+                                        <p style={{fontSize:'26px',color:'#758EBD'}}> Ser la agencia de promoción de exportación e inversión más eficiente de la región, para una República Dominicana más competitiva, productiva y desarrollada.</p>
                                     
                                     </div>
                            </Slider>
