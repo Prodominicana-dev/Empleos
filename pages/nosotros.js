@@ -61,7 +61,7 @@ const Nosotros = () => {
         <div className="container-fluid">
           {/* Resto de tu código */}
           <div className="row">
-                <div className="d-none d-lg-block col-lg-7 p-0">
+                <div className="d-none d-lg-block col-lg-5 p-0">
                     <div className="testimonial-bg set-bg"  >
                     <img src="https://prodominicana.gob.do/wp/wp-content/themes/ceird/img/ceird.jpg"  />
                     </div>
