@@ -66,7 +66,7 @@ const Nosotros = () => {
                     <img src="https://prodominicana.gob.do/wp/wp-content/themes/ceird/img/ceird.jpg"  />
                     </div>
                 </div>
-                <div className="col-lg-6 p-0" 
+                <div className="col-lg-7 p-0" 
                 style={{backgroundColor:'black'}}
                 >
                     <div className="testimonial-box">
