@@ -21,7 +21,12 @@ const [categorias, setCategorias] = useState([])
 const url=`${Url}Categoria`
 useEffect(() => {
 
-    axios.get(url).then((response)=>{
+    axios.get(url,{
+        headers: {
+            
+            'Origin': 'https://empleos.prodominicana.gob.do',
+        }
+    }).then((response)=>{
         setCategorias(response.data)
          
 });
