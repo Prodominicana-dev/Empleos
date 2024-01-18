@@ -18,7 +18,7 @@ const [categorias, setCategorias] = useState([])
 
 
 //Consulta.......
-const url=`${Url}Category`
+const url=`${Url}Categoria`
 useEffect(() => {
 
     axios.get(url).then((response)=>{

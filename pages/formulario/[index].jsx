@@ -171,16 +171,7 @@ const headerSuscriptor=()=>
         </div>
 );
 
- console.log('aqui estoy ddddddddddddddd',error3);
- //console.log(targetPlus);
-// const onInputChange = (e, name) => {
-//     console.log(e.target.value)
-//     const val = (e.target && e.target.value) || '';
-//     let _Subscription = { ...Subscription };
-//     _Subscription[`${name}`] = val;
 
-//     setSubscription(_Subscription);
-// };
 // ..............................
 useEffect(() => {
   async function obtenerDatosExperiencia() {
