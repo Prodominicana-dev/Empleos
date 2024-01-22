@@ -21,12 +21,7 @@ const [categorias, setCategorias] = useState([])
 const url=`${Url}Categoria`
 useEffect(() => {
 
-    axios.get(url,{
-        headers: {
-            
-            'Origin': 'https://empleos.prodominicana.gob.do',
-        }
-    }).then((response)=>{
+    axios.get(url).then((response)=>{
         setCategorias(response.data)
          
 });
@@ -40,7 +35,7 @@ const getCategorias=()=>{
                 <div className='row'>
                         {categorias.map((categoria)=>(
                     
-                            <div className='col-lg-3 '>
+                            <div key={categoria.id} className='col-lg-3 '>
                             <Link className='border-none font-light line-height-2 text-blue-500' key={categoria.id} style={{textDecoration:'none'}} href={`vacante/${categoria.id}`}>  
                                 <div className='mb-5'>
                                 <Card className={style.alerta}>

@@ -6,3 +6,10 @@ const nextConfig = {
 module.exports = nextConfig
 
 
+module.exports = {
+  env: {
+    API_URL: 'https://empleosapi.prodominicana.gob.do', // Apunta a tu API Nest.js
+  },
+};
+
+
