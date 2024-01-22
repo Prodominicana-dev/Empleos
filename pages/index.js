@@ -25,38 +25,34 @@ export default function Home() {
     
      const mensaje = () => {
       
-        return(
-            <div>
-                    { (user.Id != null)&&
-                        (
-                            <div className="mx-4 md:mx-8 mt-0 md:mt-4">  
-                                <h1 className="text-6xl font-bold text-gray-900 line-height-2">
-                                    
-                                    <span className="font-light block">Bienvenido</span>{user.username}
-                                </h1>
-                                {/* <p className="font-normal text-2xl line-height-3 md:mt-3 text-gray-700">Sed blandit libero volutpat sed cras. Fames ac turpis egestas integer. Placerat in egestas erat... </p> */}
-                                <Link href={`/formulario/${user.Id}`}>
-                                <Button label="Ir al Perfil" rounded className="text-xl border-none mt-3 bg-blue-500 font-normal line-height-3 px-3 text-white"></Button>
-                                </Link>
-                            </div>
-                        )
-                        }
-                        {(user.Id == null) &&
-                            (
-                                <div className="mx-4 md:mx-8 mt-0 md:mt-4">           
-                                    <h1 className="text-6xl font-bold text-gray-900 line-height-2">
-                                        
-                                        <span className="font-light block">Para aplicar</span>Debes registrarte
-                                    </h1>
-                                    {/* <p className="font-normal text-2xl line-height-3 md:mt-3 text-gray-700">Sed blandit libero volutpat sed cras. Fames ac turpis egestas integer. Placerat in egestas erat... </p> */}
-                                    {/* <Link href='/registro'>
-                                    <Button label="Registrarme" rounded className="text-xl border-none mt-3 bg-blue-500 font-normal line-height-3 px-3 text-white"></Button>
-                                    </Link> */}
-                                </div>
-                            )
-                        }
+    
+        if(user.Id != null){
+           return(
+            <div className="mx-4 md:mx-8 mt-0 md:mt-4">  
+                <h1 className="text-6xl font-bold text-gray-900 line-height-2">
+                    
+                    <span className="font-light block">Bienvenido</span>{user.username}
+                </h1>
+                {/* <p className="font-normal text-2xl line-height-3 md:mt-3 text-gray-700">Sed blandit libero volutpat sed cras. Fames ac turpis egestas integer. Placerat in egestas erat... </p> */}
+                <Link href={`/formulario/${user.Id}`}>
+                <Button label="Ir al Perfil" rounded className="text-xl border-none mt-3 bg-blue-500 font-normal line-height-3 px-3 text-white"></Button>
+                </Link>
             </div>
-        )
+           )
+        }else{
+            return(
+                <div className="mx-4 md:mx-8 mt-0 md:mt-4">           
+                    <h1 className="text-6xl font-bold text-gray-900 line-height-2">
+                        
+                        <span className="font-light block">Para aplicar</span>Debes registrarte
+                    </h1>
+                    {/* <p className="font-normal text-2xl line-height-3 md:mt-3 text-gray-700">Sed blandit libero volutpat sed cras. Fames ac turpis egestas integer. Placerat in egestas erat... </p> */}
+                    {/* <Link href='/registro'>
+                    <Button label="Registrarme" rounded className="text-xl border-none mt-3 bg-blue-500 font-normal line-height-3 px-3 text-white"></Button>
+                    </Link> */}
+                </div>
+            )
+        }
      }
   return (
        <Layout pagina='Inicio'>
