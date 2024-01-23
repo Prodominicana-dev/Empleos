@@ -249,6 +249,7 @@ console.log('dialog',positionAppliedFor.status)
 
       <div>
           <div className="d-flex justify-content-end " style={{textDecoration:'none'}}>
+            
             <Button className="mt-5 w-full p-3 text-xl" label="APLICAR" rounded text raised style={{height:'40px',width:'90px',fontSize:'19px'}} 
              onClick={user.Id === undefined ? DialogRegistroOpen :
                 (subscription && Object.keys(subscription).length === 0 ? DialogProfileOpen :
@@ -306,7 +307,9 @@ const dialog = () => {
         footer={DialogFooter}
         onHide={hideDialog}
       >
+    
         <Comparacion ProfileAssessment={ProfileAssessment} language={language} Knowledge={Knowledge} subscription={subscription} setAplicar={setAplicar} />
+     
       </Dialog>
     </div>
   );
