@@ -17,12 +17,15 @@ module.exports = nextConfig
 //   },
   
 // }
+const execSync = require("child_process").execSync;
+
+const lastCommitCommand = "git rev-parse HEAD";
+
 module.exports = {
-  generateBuildId: async () => {
-    // This could be anything, using the latest git hash
-    return process.env.GIT_HASH
+  async generateBuildId() {
+    return execSync(lastCommitCommand).toString().trim();
   },
-}
+};
 
 module.exports = {
   env: {
