@@ -36,7 +36,7 @@ const getCategorias=()=>{
                         {categorias.map((categoria)=>(
                     
                             <div key={categoria.id} className='col-lg-3 '>
-                            <Link className='border-none font-light line-height-2 text-blue-500' key={categoria.id} style={{textDecoration:'none'}} href={`vacante/${categoria.id}`}>  
+                            <Link className='border-none font-light line-height-2 text-blue-500' key={categoria.id} style={{textDecoration:'none'}} href={`/something-else?categoriaid=${categoria.id}`} as={`vacante/${categoria.id}`}>  
                                 <div className='mb-5'>
                                 <Card className={style.alerta}>
                                     {/* <Card.Img className='mt-0' variant="top" style={{padding:'4rem'}} src="https://hunty.com/wp-content/uploads/3-pasos-para-empezar-a-buscar-vacantes-de-trabajo.jpg" /> */}
