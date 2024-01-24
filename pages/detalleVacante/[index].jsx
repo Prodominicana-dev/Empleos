@@ -243,7 +243,7 @@ const DialogAplicoOpen=()=>{
 const DialogOpen=()=>{
 
 
-console.log('dialog',positionAppliedFor.status)
+console.log('dialog',subscription)
 
   return(
 
@@ -252,7 +252,7 @@ console.log('dialog',positionAppliedFor.status)
             
             <Button className="mt-5 w-full p-3 text-xl" label="APLICAR" rounded text raised style={{height:'40px',width:'90px',fontSize:'19px'}} 
              onClick={user.Id === undefined ? DialogRegistroOpen :
-                (subscription && Object.keys(subscription).length === 0 ? DialogProfileOpen :
+                (subscription === undefined ? DialogProfileOpen :
                 positionAppliedFor.status ==='None' ?  DialogAplicoOpen:  openDialog)
             }
             ></Button>
