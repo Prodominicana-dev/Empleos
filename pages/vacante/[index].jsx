@@ -52,7 +52,7 @@ const getVacantes=()=>{
                                         <div className='row'>
                                             <div  className='col-lg-7'><h4>{vacante.name}</h4></div>
                                             <div className='col-lg-3'></div>
-                                            <div className={style.habilitado}>{vacante.status}</div>
+                                            {/* <div className={style.habilitado}>{vacante.status}</div> */}
                                           </div>
                                         </div>
                                         <hr/>

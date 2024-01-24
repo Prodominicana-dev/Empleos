@@ -354,10 +354,10 @@ const DetalleVacante = () => {
                       </label>
                       <div className={style.textCo}>{responsibilities}</div>
 
-                      <label htmlFor="password1" className="block text-900 font-medium text-xl mb-2">
+                      {/* <label htmlFor="password1" className="block text-900 font-medium text-xl mb-2">
                         Condición:
                       </label>
-                      <div className={style.habilitado}><div className='text-center'>{status}</div></div>
+                      <div className={style.habilitado}><div className='text-center'>{status}</div></div> */}
                       <hr />
 
                       <div className='mt-5'>
