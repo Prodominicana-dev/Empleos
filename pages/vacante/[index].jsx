@@ -43,9 +43,10 @@ const getVacantes=()=>{
           <div className='col-lg-12'>
               <div className='row'>
                       {vacantes.map((vacante)=>(
-                            <div className='col-lg-6'>
+                            <div key={vacante.id} className='col-lg-6'>
                              {vacante.status !== 'deshabilitado' && (
                               <Link className='' key={vacante.id} style={{textDecoration:'none'}} href={`/detalleVacante/${vacante.id}`}>  
+                              
                                   <Card className={style.alerta}>
                                       <Card.Body>
                                       <div className='col-lg-12'>
@@ -66,6 +67,7 @@ const getVacantes=()=>{
                                                
                                       </Card.Body>
                                   </Card>
+                                  
                               </Link> 
                                 )}
                           </div> 

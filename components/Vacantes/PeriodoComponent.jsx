@@ -23,7 +23,7 @@ const PeriodoComponent = ({ id,status }) => {
   }, [id]);
 
   return (<div>
-            {fechaRegistro && <div>Esta Vacante se ha {status} el {fechaRegistro && format(fechaRegistro, 'dd/MM/yyyy HH:mm a')}</div>}
+            {fechaRegistro && <p>Esta Vacante se ha {status} el {fechaRegistro && format(fechaRegistro, 'dd/MM/yyyy HH:mm a')}</p>}
           
 
          </div>)
