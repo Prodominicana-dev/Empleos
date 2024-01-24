@@ -45,7 +45,7 @@ const getVacantes=()=>{
                       {vacantes.map((vacante)=>(
                             <div key={vacante.id} className='col-lg-6'>
                              {vacante.status !== 'deshabilitado' && (
-                              <Link className='' key={vacante.id} style={{textDecoration:'none'}}href={`/something-else?vacante.id=${vacante.id}`} as={`/detalleVacante/${vacante.id}`}>  
+                              <Link className='' key={vacante.id} style={{textDecoration:'none'}} href={`/detalleVacante/${vacante.id}`}>  
                               
                                   <Card className={style.alerta}>
                                       <Card.Body>
