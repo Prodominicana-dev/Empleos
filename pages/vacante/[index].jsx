@@ -16,7 +16,7 @@ import PeriodoComponent from '../../components/Vacantes/PeriodoComponent';
 import {Url} from '../../components/Url/URL';
 //............................................
 
-const listVacantes = (data) => {
+const ListVacantes = (data) => {
  
 
 const {id,category}=data.data;
@@ -127,4 +127,4 @@ export async function getServerSideProps({query:{index}}){
   
 }
 
-export default listVacantes
+export default ListVacantes
