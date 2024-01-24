@@ -17,15 +17,22 @@ module.exports = nextConfig
 //   },
   
 // }
-const execSync = require("child_process").execSync;
+// const execSync = require("child_process").execSync;
 
-const lastCommitCommand = "git rev-parse HEAD";
+// const lastCommitCommand = "git rev-parse HEAD";
 
+// module.exports = {
+//   async generateBuildId() {
+//     return execSync(lastCommitCommand).toString().trim();
+//   },
+// };
+
+const isProd = process.env.NODE_ENV === 'production'
+ 
 module.exports = {
-  async generateBuildId() {
-    return execSync(lastCommitCommand).toString().trim();
-  },
-};
+  // Use the CDN in production and localhost for development.
+  assetPrefix: isProd ? 'https://empleos.prodominicana.gob.do' : undefined,
+}
 
 module.exports = {
   env: {
