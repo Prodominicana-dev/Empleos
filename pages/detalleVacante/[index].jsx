@@ -324,21 +324,21 @@ const DetalleVacante = () => {
     <>
       <div className={style.space02}></div>
       <div className='flex items-center justify-center min-w-screen overflow-hidden mt-9 mb-8'>
-        <div className='col-lg-12'>
+        <div className='col-md-12 col-lg-12'>
           <div className='row'>
-            <div className='col-lg-4'></div>
-            <div className='col-lg-4'>
-              <div className={`align-items-center justify-content-center mt-8 ${style.responsiveContainer}`}>
+            <div className='col-md-12 col-md-1/ col-lg-3'></div>
+            <div className='col-md-12 col-lg-6'>
+              <div className={`align-items-center justify-content-center mt-8 ml-3 ${style.responsiveContainer}`}>
                 <div style={{ borderRadius: '16px', padding: '0.3rem', background: 'linear-gradient(180deg, var(--primary-color) 100%, rgba(33, 150, 243, 0) 100%)' }}>
-                  <div className="w-full surface-card py-8 sm:px-8" style={{ borderRadius: '16px' }}>
+                  <div className="w-full surface-card py-8 sm:px-8 " style={{ borderRadius: '16px' }}>
                   <div className="">
-                      <Button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"  icon="pi pi-arrow-left"
+                      <Button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-5 rounded focus:outline-none focus:shadow-outline"  icon="pi pi-arrow-left"
                             onClick={handleGoBack}
                       >
                        
                       </Button>
                   </div>
-                    <div className="text-center mb-5">
+                    <div className="text-center mb-5 ">
 
                       <span className="block text-1000 text-xl mb-2"><h3>{name}</h3></span>
                     </div>
@@ -371,7 +371,7 @@ const DetalleVacante = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-4'></div>
+            <div className='col-md-12 col-lg-3'></div>
           </div>
         </div>
       </div>

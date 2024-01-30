@@ -102,11 +102,11 @@ console.log(data.data)
     {/* Contenido adicional */}
   </div>
 
-  <div className={`col-lg-12 border border-blue-500 rounded p-4`} style={{ height: "20em" }}>
+  <div className={`col-lg-12 border border-blue-500 rounded p-4`} style={{ height: "30em" }}>
     {/* Contenido adicional o espacio reservado */}
   </div>
 </div>
-      
+
       
     </Layout>
   )

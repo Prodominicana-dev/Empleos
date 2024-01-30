@@ -19,7 +19,7 @@ const LoginPage = (data) => {
     const [ValidPass, setValidPass] = useState(null)
     
     const router = useRouter();
-    const containerClassName = classNames('surface-ground flex align-items-center justify-content-center min-h-screen min-w-screen overflow-hidden', { 'p-input-filled':'filled' });
+    const containerClassName = classNames('surface-ground flex align-items-center justify-content-center min-h-screen min-w-screen overflow-hidden ', { 'p-input-filled':'filled' });
 
 
 
@@ -70,13 +70,13 @@ const LoginPage = (data) => {
 
     return (
         <Layout pagina='Login'>
-        <div className={containerClassName}>
-            <div className="flex flex-column align-items-center justify-content-center">
+        <div className={containerClassName} >
+            <div className="align-items-center justify-content-center">
                 {/* <img src={`/layout/images/logo-${layoutConfig.colorScheme === 'light' ? 'dark' : 'white'}.svg`} alt="Sakai logo" className="mb-5 w-6rem flex-shrink-0" /> */}
                 {/* <img src={`https://prodominicana.gob.do/Imagenes/PD-Logo-RGB-CEI%20Icon.png`} alt="Sakai logo" className="mb-5 w-6rem flex-shrink-0" /> */}
                 <div style={{ borderRadius: '56px', padding: '0.3rem', background: 'linear-gradient(180deg, var(--primary-color) 10%, rgba(33, 150, 243, 0) 30%)' }}>
                     <div className="w-full surface-card py-8 px-5 sm:px-8" style={{ borderRadius: '53px' }}>
-                        <div className="text-center mb-2">
+                        <div className="text-center mb-5">
                           
                             <span className="text-600 font-medium">Iniciar sesión</span>
                            
@@ -88,12 +88,12 @@ const LoginPage = (data) => {
                             <label htmlFor="email1" className="block text-900 text-xl font-medium mb-2 control-label required">
                               Correo electrónico
                             </label>
-                            <InputText inputid="email1" type="text" required placeholder="Correo electrónico" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full md:w-30rem mb-2" style={{ padding: '1rem' }} />
+                            <InputText inputid="email1" type="text" required placeholder="Correo electrónico" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full md:w-30rem  col-md-12 col-lg-12" style={{ padding: '1rem' }} />
                              <div  className='mt-1 text-right' style={{color:'#ED265E'}}>{ValidEmail}</div>
                             <label htmlFor="password1" className="block text-900 font-medium text-xl mb-2 control-label required">
                               Contraseña
                             </label>
-                            <Password inputid="password1" value={password} required onChange={(e) => setPassword(e.target.value)} placeholder="Contraseña" toggleMask className="w-full mb-2" inputClassName="w-full p-3 md:w-30rem"></Password>
+                            <Password inputid="password1" value={password} required onChange={(e) => setPassword(e.target.value)} placeholder="Contraseña" toggleMask className="w-full mb-2 " inputClassName=" p-3 md:w-30rem col-md-12 col-lg-12"></Password>
                             <div  className='mt-1 text-right' style={{color:'#ED265E'}}>{ValidPass}</div>
                             <div className="flex align-items-center justify-content-between mb-5 gap-5">
                               
