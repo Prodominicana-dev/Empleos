@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
-  async rewrites() {
-    return [
-      {
-        source: '/_next/:path*',
-        destination: `https://empleos.prodominicana.gob.do/_next/:path*`,
-      },
-    ]
-  },
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: '/_next/:path*',
+  //       destination: `https://empleos.prodominicana.gob.do/_next/:path*`,
+  //     },
+  //   ]
+  // },
 }  
  
 // module.exports = {
