@@ -9,8 +9,8 @@ module.exports = {
       },
     ]
   },
-}
-
+} 
+ 
 // module.exports = {
   
 //   distDir: "_next",
