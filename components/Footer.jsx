@@ -13,7 +13,7 @@ const year= new Date()
   return (
     <footer>
 
-<footer className="footer-section spad" style={{background: "#003DA5", paddingBottom: "10px"}}>
+<footer className="footer-section spad" style={{background: "#003DA5", paddingBottom: "10px", height: "auto" }}>
     <div className="container">
         <div className="row">
             <div className="row" style={{width:"100%"}}>
