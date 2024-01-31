@@ -1,13 +1,14 @@
 import { Dialog } from 'primereact/dialog';
 import {Button} from 'primereact/button';
+import { useRouter } from 'next/router';
 
+const DialogAplicando = ({dialogAplico,setDialogAplico,id}) => {
 
-const DialogAplico = ({dialogAplico,setDialogAplico}) => {
-
+    const router = useRouter();
      const HideDialog = () => {
  
         setDialogAplico(false);
-
+        router.push('/');
      }
 
    
@@ -34,7 +35,7 @@ const DialogAplico = ({dialogAplico,setDialogAplico}) => {
                   <Dialog visible={dialogAplico} style={{ width: '350px' }} header="¡Aviso!" modal className="custom-dialog p-fluid" footer={DialogFooter} onHide={HideDialog}>
                          <div>
                             <p style={{ fontSize: '13px', color: '#333', textAlign: 'center' }}>
-                               ¡Ya aplico en esta vacante!
+                               ¡Ha Aplicado a esta Vacante!
                             </p>
                          </div>
                   </Dialog>
@@ -53,4 +54,4 @@ const DialogAplico = ({dialogAplico,setDialogAplico}) => {
 
 }
 
-export default DialogAplico
+export default DialogAplicando

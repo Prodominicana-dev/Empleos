@@ -1,4 +1,4 @@
-import React,{useState,useEffect,useRef} from 'react'
+import React,{useState,useEffect} from 'react'
 import {Url} from '../../components/Url/URL';
 import axios from 'axios';
 
@@ -167,10 +167,12 @@ const EdadSubscription = calcularDiferenciaEnAnios(fechaNacimiento, fechaActual)
     if(WorkExperience !== undefined){
      WorkExperience.forEach(respuesta => {
       const endDate = convertirFechaStringADate(respuesta.endDate);
-      const TimeWorkExperience = calcularDiferenciaEnAnios(respuesta.startDate, endDate);
+      const startDate =convertirFechaStringADate(respuesta.startDate);
+      const TimeWorkExperience = calcularDiferenciaEnAnios(startDate, endDate);
+      //console.log(TimeWorkExperience)
       const TheWorkExperience = asignarNivelExperiencia(TimeWorkExperience)
     
-
+ //console.log(TheWorkExperience,"aquii")
       if(shouldContinueWorkExperience && Conditional(TheWorkExperience, ProfileAssessment.workExperience)){
         shouldContinueWorkExperience = false;
 
@@ -258,6 +260,9 @@ const EdadSubscription = calcularDiferenciaEnAnios(fechaNacimiento, fechaActual)
    const noAplica=()=>{
     setAplicar(false)
    }
+   const Aplica=()=>{
+    setAplicar(true)
+   }
 //.............................................................
     const getNivelEducation=(numero)=>{
       switch (Number(numero)) {
@@ -328,6 +333,7 @@ const EdadSubscription = calcularDiferenciaEnAnios(fechaNacimiento, fechaActual)
 
           {resultado == 0 && (
             <div className='text-center'>
+              {Aplica()}
                 <h3>¿Estás seguro de aplicar en esta vacante?</h3>
             </div>
           )}

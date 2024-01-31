@@ -22,6 +22,7 @@ import {DeleteProfileParticulars} from '../../components/PostPut/PostPerfil'
 import DialogProfile from '../../components/dialog/Dialog'
 import DialogRegistro from '../../components/dialog/DialogRegistro'
 import DialogAplico from '../../components/dialog/DialogAplico'
+import DialogAplicando from '../../components/dialog/DialogAplicando'
 //.............................................................
 import ProfileParticulars from '../../components/componetAssessment/ProfileParticulars'
 import KnowledgeAssessment from '../../components/componetAssessment/Knowledge'
@@ -72,6 +73,7 @@ const [profileParticularsAnswer, setProfileParticularsAnswer] = useState([]);
 const [value,setValue]=useState(false);
 const [dialogRegistro,setDialogRegistro]=useState(false);
 const [dialogAplico,setDialogAplico]=useState(false);
+const [dialogAplicando,setDialogAplicando]=useState(false);
 
 const [ProfileAssessment,setProfileAssessment]=useState([]);
 
@@ -119,7 +121,10 @@ setKnowledgeAnswer(KnowledgeAnswer);
 setProfileParticularsAnswer(profileParticularsAnswer);
 }
 
-
+//...............................................
+const DialogAplicandoOpen=()=>{
+  setDialogAplicando(true);
+}
 //................................................
 const handleSubmit = async(event)=>{
 event.preventDefault();
@@ -135,7 +140,10 @@ PositionAppliedFor.idSubscription=Number(user.Id)
     hideDialog();
 
    
-    router.push(`detalleVacante${id}`);
+
+    DialogAplicandoOpen();
+
+    
 
 }
 
@@ -365,6 +373,7 @@ const DetalleVacante = () => {
                         <DialogProfile value={value} setValue={setValue} id={user.Id} />
                         <DialogRegistro dialogRegistro={dialogRegistro} setDialogRegistro={setDialogRegistro} />
                         <DialogAplico dialogAplico={dialogAplico} setDialogAplico={setDialogAplico}/>
+                        <DialogAplicando dialogAplico={dialogAplicando} setDialogAplico={setDialogAplicando} id={id}/>
                       </div>
                     </div>
                   </div>
