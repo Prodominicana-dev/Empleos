@@ -6,7 +6,7 @@ import { Form, Col } from 'react-bootstrap';
 const PhoneField = ({ value, onChange }) => {
   const handleOnChange = (phone) => {
 
-    console.log('auiPhone',phone)
+    //console.log('auiPhone',phone)
     
     onChange(phone);
 

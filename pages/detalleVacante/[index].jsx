@@ -144,7 +144,7 @@ useEffect(() => {
   const obtener = async () => {
     try {
       const response = await axios.get(`${Url}ProfileAssessment/${id}`);
-      console.log(response.data)
+      //console.log(response.data)
       const data = response.data[0]
       
       setProfileAssessment(data);
@@ -161,7 +161,7 @@ useEffect(() => {
       const response = await axios.get(`${Url}LanguageAssessment/${id}`);
       const {data}=response;
      
-      console.log(data)
+     // console.log(data)
       setLanguage(data);
      
     } catch (error) {
@@ -177,7 +177,7 @@ useEffect(() => {
 const obtenerKnowledge = async () => {
 try {
   const response = await axios.get(`${Url}KnowledgeAssessment/${id}`);
-  console.log(response.data)
+  //console.log(response.data)
   setKnowledge(response.data);
 } catch (error) {
   console.error('Error al obtener Knowledge Assessment:', error);
@@ -216,7 +216,7 @@ useEffect(() => {
         const data= response.data; 
         const ultimoElemento = data[data.length - 1];
 
-        console.log('Ultimo elemento ',ultimoElemento);
+        //console.log('Ultimo elemento ',ultimoElemento);
         if(ultimoElemento!=undefined){
               setPositionAppliedFor(ultimoElemento);
         }
@@ -243,7 +243,7 @@ const DialogAplicoOpen=()=>{
 const DialogOpen=()=>{
 
 
-console.log('dialog',subscription)
+//console.log('dialog',subscription)
 
   return(
 

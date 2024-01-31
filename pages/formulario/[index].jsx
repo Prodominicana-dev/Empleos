@@ -373,7 +373,7 @@ event.preventDefault();
     //.........................................
      //imagen..........
      try {
-      console.log(imagen)
+     // console.log(imagen)
      if(imagen.length != 0){
         const formData = new FormData();
         formData.append('imagen', imagen);
@@ -393,7 +393,7 @@ event.preventDefault();
     Subscription.idSubscription=id;
     //...............................
     let WorkExperience =[...workExperiences.concat(education).concat(training).concat(language).concat(personalReferences).concat(professionalReferences),Subscription]
-    console.log(WorkExperience)
+    //console.log(WorkExperience)
     //Validacion.................................
     const algunCampoVacio = WorkExperience.some(objeto => {
       return Object.values(objeto).some(value => value === '');
@@ -474,17 +474,17 @@ event.preventDefault();
 
           //Subscription.idSubscription=id;
           //console.log(id);
-          console.log(Subscription);
+          //console.log(Subscription);
           PutPerfil(Subscription);
           
           //Experiencia Laboral Externa..............
           PutWorkExperience(workExperiences);
           DeleteWorkExperience(elimExperiencia);
-          console.log(elimExperiencia);
+          //console.log(elimExperiencia);
           //Education................................
           PutEducation(education);
           DeleteEducation(elimEducation);
-          console.log(elimEducation);
+          //console.log(elimEducation);
           //Training................................
           PutTraining(training);
           DeleteTraining(elimTraining);
@@ -494,7 +494,7 @@ event.preventDefault();
           //Referencias Personales..........................
           PutPersonalReferences(personalReferences);
           DeletePersonalReferences(elimPersonalReferences);
-          console.log(elimPersonalReferences);
+          //console.log(elimPersonalReferences);
           //Referencias Laborales...........................
           PutProfessionalReferences(professionalReferences);
           DeleteProfessionalReferences(elimProfessionalReferences);

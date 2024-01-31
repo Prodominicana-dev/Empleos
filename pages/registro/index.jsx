@@ -63,7 +63,7 @@ const Registro = () => {
           // Validar la contraseña
         const regex = /^(?=.*[a-zA-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
         const esValidaContrasena = regex.test(password);
-         console.log(esValidaContrasena)
+         //console.log(esValidaContrasena)
         if(!esValidaContrasena){
             setError('La contraseña debe tener al menos 6 caracteres y contener al menos un carácter especial.');
             return;
@@ -77,7 +77,7 @@ const Registro = () => {
         registro.name=name;
         registro.email=email;
         registro.password=password;
-        console.log(registro)
+        //console.log(registro)
 
         
           // Realizar la solicitud HTTP POST utilizando Axios
@@ -88,7 +88,7 @@ const Registro = () => {
            
            
 
-           console.log('Registro Enviado');
+           //console.log('Registro Enviado');
 
            router.push('/');
 

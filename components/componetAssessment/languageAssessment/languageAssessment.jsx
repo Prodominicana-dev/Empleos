@@ -21,7 +21,7 @@ const LanguageAssesment = ({Languages,setLanguageAnswer,index,error,setError,idJ
                       answerLanguageAssessment:Languages.answerLan,
                       status:'None'
                     };
-                    console.log(nuevosLanguage);
+                    //console.log(nuevosLanguage);
                     return nuevosLanguage;
                   });
                 } catch (error) {

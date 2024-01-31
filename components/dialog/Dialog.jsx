@@ -15,7 +15,7 @@ const DialogProfile = ({value,setValue,id}) => {
 
 
 // console.log(dialog)
-console.log(value)
+//console.log(value)
      const HideDialog = () => {
  
         setValue(false);

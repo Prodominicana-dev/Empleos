@@ -6,7 +6,7 @@ export default function profileHandler(req, res){
 
  try {
     const user = verify(cookieUsiario, 'secreto')
-    console.log(user)
+    //console.log(user)
     return res.json({
         Id:user.Id,
         email:user.email,

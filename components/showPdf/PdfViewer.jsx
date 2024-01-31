@@ -14,7 +14,7 @@ const MostrarPDF = ({idSubscription}) => {
           const files =response.data;
 
 
-          console.log('aquiiiFile',files)
+          //console.log('aquiiiFile',files)
           setArchivos(files);
         } catch (error) {
           console.error('Error al obtener la lista de archivos:', error);

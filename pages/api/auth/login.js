@@ -4,7 +4,7 @@ import { serialize } from "cookie"
 export default function loginHandler(req, res){
     const {Id,Email,Name}=req.body
 
-    console.log(req.body)
+    //console.log(req.body)
 
  try {
      //token......

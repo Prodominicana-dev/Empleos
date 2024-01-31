@@ -1,7 +1,6 @@
 import { Dialog } from 'primereact/dialog';
 import {Button} from 'primereact/button';
-import Link from 'next/link';
-import { useState,useEffect } from 'react';
+
 
 const DialogAplico = ({dialogAplico,setDialogAplico}) => {
 

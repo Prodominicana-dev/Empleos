@@ -25,7 +25,7 @@ const Profile = ({Subscription, setSubscription, Col, id, setError,error}) => {
                 Axios.get(`${Url}Profile/${id}`).then((response)=>{
 
                 const firstProfile = response.data[0];
-                       console.log('Perfil:', firstProfile,'Aquiiii');
+                       //console.log('Perfil:', firstProfile,'Aquiiii');
                 if(firstProfile != undefined)
                 {
                        
@@ -82,7 +82,7 @@ const Profile = ({Subscription, setSubscription, Col, id, setError,error}) => {
                 const val = (value) || '';
 
                
-                console.log(val +" "+name)
+                //console.log(val +" "+name)
                 
                 let _Subscription = { ...Subscription };
                 _Subscription[`${name}`] =  val.toString();

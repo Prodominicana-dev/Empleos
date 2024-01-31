@@ -16,7 +16,7 @@ const MostrarImg = ({idSubscription}) => {
           const Img =response.data;
 
 
-          console.log('aquiiiFile',Img)
+          //console.log('aquiiiFile',Img)
           setImg(Img);
         } catch (error) {
           console.error('Error al obtener la lista de Img:', error);
@@ -47,7 +47,7 @@ const MostrarImg = ({idSubscription}) => {
    
 
     const header = (name) => {
-     console.log('imagen aqui',name)
+     //console.log('imagen aqui',name)
     
         return (
           <div>
@@ -83,11 +83,6 @@ const MostrarImg = ({idSubscription}) => {
     };
 
 
-
-
-
-
-
     const footer=({name,id})=> (
     
         <div className="flex flex-wrap justify-content-end gap-2">
@@ -97,11 +92,6 @@ const MostrarImg = ({idSubscription}) => {
     
     );
     
-
-
-
-
-
 
   return (
     <div>

@@ -21,7 +21,7 @@ const ProfileParticulars = ({ProfileParticulars,index,error,setError,setProfileP
                 answerProfileParticularsAssessment:ProfileParticulars.answerProf,
                 status:'None'
               };
-              console.log(nuevosProfileParticular);
+              //console.log(nuevosProfileParticular);
               return nuevosProfileParticular;
             });
           } catch (error) {
@@ -69,7 +69,7 @@ const ProfileParticulars = ({ProfileParticulars,index,error,setError,setProfileP
               
               };
 
-                console.log('aquiiooo',error)
+                //console.log('aquiiooo',error)
     //...................................................................
 
               const nivel =[

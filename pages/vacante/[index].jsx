@@ -82,7 +82,7 @@ const getVacantes=()=>{
 
 
 
-console.log(data.data)
+//console.log(data.data)
 
   return (
     <Layout pagina={category}>

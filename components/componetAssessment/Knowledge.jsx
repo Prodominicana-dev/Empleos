@@ -22,7 +22,7 @@ const KnowledgeAssessment = ({Knowledges,index,error,setError,setKnowledgeAnswer
                 answerKnowledgeAssessment:Knowledges.answerKnow,
                 status:'None'
               };
-              console.log(nuevosKnowledge);
+              //console.log(nuevosKnowledge);
               return nuevosKnowledge;
             });
           } catch (error) {

@@ -14,7 +14,7 @@ import axios from 'axios';
     const obtener = async () => {
       try {
         const response = await axios.get(`${Url}Language/${subscription.idSubscription}`);
-        console.log(response.data)
+        //console.log(response.data)
         const data = response.data[0]
         
         setLanguageSubscription(data);
@@ -31,7 +31,7 @@ import axios from 'axios';
     const obtener = async () => {
       try {
         const response = await axios.get(`${Url}Education/${subscription.idSubscription}`);
-        console.log(response.data)
+        //console.log(response.data)
         const data = response.data
         
         setEducation(data);
@@ -48,7 +48,7 @@ import axios from 'axios';
     const obtener = async () => {
       try {
         const response = await axios.get(`${Url}WorkExperience/${subscription.idSubscription}`);
-        console.log(response.data)
+        //console.log(response.data)
         const data = response.data
         
         setWorkExperience(data);
@@ -66,7 +66,7 @@ import axios from 'axios';
     const obtener = async () => {
       try {
         const response = await axios.get(`${Url}Training/${subscription.idSubscription}`);
-        console.log(response.data)
+        //console.log(response.data)
         const data = response.data
         
         setTraining(data);

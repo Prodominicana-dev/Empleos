@@ -15,12 +15,12 @@ const PerfilAssessment=({id,Assessment,setAssessment, error,setError})=>{
         const obtenerArchivos = async () => {
           try {
             const response = await Axios.get(`${Url}ProfileAssessment/${id}`);
-            console.log(response.data)
+           // console.log(response.data)
             const data = response.data[0]
             
             
            
-            console.log('Heyyy',Assessment)
+           // console.log('Heyyy',Assessment)
 
             setAssessment((assessment)=>{
               assessment.sexAssessment = data.sex;
@@ -58,7 +58,7 @@ const PerfilAssessment=({id,Assessment,setAssessment, error,setError})=>{
         const val = (value) || '';
 
        
-        console.log(val +" "+name)
+        //console.log(val +" "+name)
         
         let _Assessment = { ...Assessment };
         _Assessment[`${name}`] =  val.toString();
