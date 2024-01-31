@@ -31,10 +31,23 @@ const DialogAplico = ({dialogAplico,setDialogAplico}) => {
 
         return(
             <div>
+                 <style>
+                    {`.circle-text {
+                    border: 2px solid blue;
+                    border-radius: 10px;
+                    padding: 10px;
+                    margin: 10px 0;
+                    }`}
+                </style>
                   <Dialog visible={dialogAplico} style={{ width: '350px' }} header="¡Aviso!" modal className="custom-dialog p-fluid" footer={DialogFooter} onHide={HideDialog}>
                          <div>
-                            <p style={{ fontSize: '13px', color: '#333', textAlign: 'center' }}>
+                            <p style={{ fontSize: '23px', color: '#333', textAlign: 'center' }}>
                                ¡Ya aplico en esta vacante!
+                              
+                            </p>
+                            <p className='circle-text' style={{ fontSize: '19px', color: '#333', textAlign: 'center' }}>
+                               
+                               Le llegará un correo informándole los resultados de su evaluación.
                             </p>
                          </div>
                   </Dialog>
