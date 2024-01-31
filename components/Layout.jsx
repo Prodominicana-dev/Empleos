@@ -7,7 +7,7 @@ const Layout = ({children,pagina}) => {
   return (
     <div>
          <Head>
-            <title>Vacantes-{pagina}</title>
+            <title>PRODOMINICANA EMPLEOS-{pagina}</title>
             <meta name="description" content="Empleos prodominicana"/>
             {/* <link rel="stylesheet" href="style01.css"/> */}
         </Head>
